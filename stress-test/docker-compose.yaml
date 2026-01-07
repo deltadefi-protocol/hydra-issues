@@ -1,0 +1,23 @@
+services:
+  hydra-node-1:
+    image: ghcr.io/cardano-scaling/hydra-node:1.2.0
+    volumes:
+      - ./config:/config
+    ports:
+      - "4009:4001"
+      - "5009:5001"
+      - "2389:2381"
+    command:
+      [
+        "--api-host",
+        "0.0.0.0",
+        "--offline-head-seed",
+        "0001",
+        "--initial-utxo",
+        "/config/utxo.json",
+        "--hydra-signing-key",
+        "/config/alice-hydra.sk",
+        "--ledger-protocol-parameters",
+        "/config/protocol-parameters.json",
+      ]
+    restart: always

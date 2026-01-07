@@ -1,0 +1,5 @@
+{
+    "type": "HydraSigningKey_ed25519",
+    "description": "",
+    "cborHex": "5820382a9abe482c29837b81a4ed5ae786cf2988b5358f0f091a2fac3832fc04043a"
+}

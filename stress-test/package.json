@@ -1,0 +1,23 @@
+{
+  "name": "stress-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sign": "ts-node src/sign.ts",
+    "start": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@meshsdk/core": "^1.9.0-beta.93",
+    "dotenv": "^17.2.3"
+  }
+}
