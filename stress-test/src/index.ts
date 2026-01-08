@@ -112,6 +112,7 @@ async function mainWsSync () {
       start = performance.now();
 
       if (i == txs.length - 1) {
+        console.log("Done!");
         writeFileSync(
           "./result/batch-ws.json",
           JSON.stringify(results, null, 2)
